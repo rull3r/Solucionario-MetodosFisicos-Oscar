@@ -1,0 +1,50 @@
+\documentclass[10pt,a4paper]{jhwhw}
+\usepackage[utf8]{inputenc}
+%Paquetes Necesarios
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{xparse}
+%Quitar el identado de todos los parrafos
+\setlength{\parindent}{0cm}
+%Para agregar el identado en cada item de enumerate o cualquier otro, usar [\hspace{1cm}(a)]
+
+%Comandos de Letras
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+%Informacion del del autor del libro y localizacion
+\author{Autor: \href{https://www.facebook.com/ruller}{Raúl García}\\Pagina Web: \href{https://rull3r.github.io/}{MateTips}\\Correo: rull3r@hotmail.com}
+\date{Venezuela\\ \today \\}
+\title{Solucionario \\\href{https://books.google.co.ve/books?id=i4aToAEACAAJ}{Métodos Matematicos de la Fisica - Oscar Reula}\\}
+%Para el indice alfabetico
+\makeindex
+
+%Marca de agua en el documento
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{\href{https://rull3r.github.io/}{Visitame en MateTips}}} % por defecto Draft 
+\SetWatermarkScale{1} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{1,0,0} % por defecto gris claro
+\SetWatermarkAngle{55} % respecto a la horizontal
+
+\begin{document}
+	
+	\problema{ }\label{pro:1}
+	Encuentre una interseccion infinita de abiertos que no sea abierta
+	\solution 
+	Sea $O_n=\left( -1/n , 1/n\right) $ con $n=1,2,\ldots$ y sea $x \in \bigcap_{n=1}^{\infty}{O_n}$. Si $x>0$ tendremos que existe $n$ tal que $\frac{1}{n}<x$, pero cuando $n\rightarrow \infty\Rightarrow\frac{1}{n}\rightarrow0$ por otro lado con $x<0$ existira $n$ tal que $-\frac{1}{n}>x$, pero cuando $n\rightarrow \infty\Rightarrow-\frac{1}{n}\rightarrow0$, luego $\bigcap_{n=1}^{\infty}{O_n}=\left\lbrace 0\right\rbrace $ lo cual es un cerrado. \QEPD
+	
+\end{document}
