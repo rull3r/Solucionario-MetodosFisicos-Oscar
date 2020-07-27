@@ -1,0 +1,63 @@
+\documentclass[10pt,a4paper]{jhwhw}
+\usepackage[utf8]{inputenc}
+%Paquetes Necesarios
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[spanish,es-lcroman]{babel}
+\usepackage{titling}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{latexsym}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancybox}
+\usepackage{xparse}
+%Quitar el identado de todos los parrafos
+\setlength{\parindent}{0cm}
+%Para agregar el identado en cada item de enumerate o cualquier otro, usar [\hspace{1cm}(a)]
+
+%Comandos de Letras
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
+%Informacion del del autor del libro y localizacion
+\author{Autor: \href{https://www.facebook.com/ruller}{Raúl García}\\Pagina Web: \href{https://rull3r.github.io/}{MateTips}\\Correo: rull3r@hotmail.com}
+\date{Venezuela\\ \today \\}
+\title{Solucionario \\\href{https://books.google.co.ve/books?id=i4aToAEACAAJ}{Métodos Matematicos de la Fisica - Oscar Reula}\\}
+%Para el indice alfabetico
+\makeindex
+
+%Marca de agua en el documento
+\usepackage{draftwatermark}
+\SetWatermarkText{\textsc{\href{https://rull3r.github.io/}{Visitame en MateTips}}} % por defecto Draft 
+\SetWatermarkScale{1} % para que cubra toda la página
+%\SetWatermarkColor[rgb]{1,0,0} % por defecto gris claro
+\SetWatermarkAngle{55} % respecto a la horizontal
+
+\begin{document}
+	
+	\problema{ }\label{pro:2}
+	Prueba que el espacio métrico $(X,d)$ posee una topología inducida por su métrica.
+	\solution 
+	Un espacio métrico $(X,d)$ con $X$ un conjunto de puntos y $d:X\times X \longmapsto \mathbb{R}$ que satisface las siguientes propiedades:
+	\begin{enumerate}[\hspace{1cm}(i)]
+		\item $d(x,x')=0\Leftrightarrow x=x'$
+		\item $d(x,x')=d(x',x)$
+		\item $d(x,x')+d(x',x'')\geq d(x,x'')$
+	\end{enumerate}
+
+	Luego, sea $\tau_d=\left\lbrace O | \forall x \in O, \exists \beta_d(x,r)\subset B \colon \beta_d(x,r)\subset O \right\rbrace $  donde $B$ es el conjunto de todos abiertos en X y $\beta_d(x,r)$ es una bola abierta bajo la métrica $d$, de centro $x$ y radio $r$, solo resta demostrar las siguiente propiedades:
+	
+	\begin{enumerate}[\hspace{1cm}(i)]
+		\item Como $X$ y $\O$ son abiertos, entonces están en $\tau_d$
+		\item Sea $O_i$ una familia de subconjuntos abiertos arbitraria de $O$ y sea $O'=\bigcup_iO_i$. Si $O'=\O$ entonces $O'$ esta en $\tau_d$. Si $O'\neq\O$ sea $x\in O_i$ para algún $i$ y como $O_i\subset O$ entonces $\exists\beta_d(x,r)\subset O_i$ por lo tanto $\beta_d(x,r)\subset O'$ luego $O'$ esta en $\tau_d$
+		
+		\item Sean $O_1, O_2$ dos subconjuntos cualesquiera de $O$, sea $x\in O_1\bigcap O_2$, entonces $\exists\beta_d(x,r_1)\subset O_1$ y $\exists\beta_d(x,r_2)\subset O_2$ con $r=min \{r_1,r_2\}$ tendremos que $\beta_d(x,r)\subseteq \beta_d(x,r_1)$ y $\beta_d(x,r)\subseteq \beta_d(x,r_2)$ por lo tanto $\beta_d(x,r)\subseteq O_1\bigcap O_2$ esto demuestra que la intersección esta en $\tau_d$. de modo que $\tau_d$ es la topología inducida por la métrica $d$ \QEPD
+	\end{enumerate}
+\end{document}
