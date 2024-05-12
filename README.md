@@ -38,8 +38,8 @@ Si deseas contribuir al solucionario, ¡tu ayuda es muy bienvenida! Puedes segui
 Si tienes sugerencias, detectas errores en el solucionario o simplemente quieres charlar, no dudes en contactarme:
 
 - WhatsApp: [+584244165517](https://wa.me/584244165517) :speech_balloon:
-- Correo Electrónico: [tu_email@example.com](mailto:tu_email@example.com) :email:
-- Telegram: [@tu_telegram_username](https://t.me/tu_telegram_username) :speech_balloon:
+- Correo Electrónico: [rull3r@hotmail.com](mailto:rull3r@hotmail.com) :email:
+- Telegram: [@rull3r](https://t.me/rull3r) :speech_balloon:
 
 ¡Estaré encantado de escucharte y ayudarte en lo que necesites! :smiley:
 
@@ -47,7 +47,7 @@ Si tienes sugerencias, detectas errores en el solucionario o simplemente quieres
 
 Si deseas apoyarme y agradecerme por el solucionario, puedes invitarme un café:
 
-- [PayPal.me/tu_usuario_paypal](https://www.paypal.me/tu_usuario_paypal) :coffee:
-- Red BEP20 a la siguiente dirección de wallet: `tu_dirección_wallet` :money_with_wings:
+- [PayPal.me/rull3r](https://www.paypal.me/rull3r) :coffee:
+- Red BEP20 a la siguiente dirección de wallet: `0x4a8cb622404386aaef5d3cf2b60e32f3215f5e33` :money_with_wings:
 
 ¡Tus contribuciones son muy apreciadas y me ayudarán a seguir trabajando en este proyecto! :sparkles:
